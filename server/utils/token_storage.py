@@ -9,7 +9,7 @@ r = redis.Redis(
     decode_responses=True
 )
  
-def save_token(user_id: str, data: dict):
+def save_token(user_id: str, data: dict): 
     """Save Spotify token to Redis with 1-hour expiry."""
     r.setex(f"spotify:token:{user_id}", 3600, json.dumps(data))
 

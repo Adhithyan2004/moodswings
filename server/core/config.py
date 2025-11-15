@@ -11,6 +11,7 @@ class Settings:
     GEMINI_API_KEY = os.getenv("OPENAI_API_KEY")
     REDIS_PORT = os.getenv("REDIS_PORT")
     REDIS_HOST = os.getenv("REDIS_HOST")
+    FRONTEND_URL = os.getenv("FRONTEND_URL")
 
 
 settings = Settings()

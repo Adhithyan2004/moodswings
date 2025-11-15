@@ -1,1 +1,19 @@
 @import "tailwindcss";
+
+@font-face {
+  font-family: "against";
+  src: url("/fonts/MyFont.ttf") format("truetype");
+}
+
+.Logo,
+.Heading {
+  font-family: "against", sans-serif;
+}
+
+.glow {
+  @apply shadow-[0_0_8px_#8BE8E5,0_0_30px_rgba(139,232,229,0.35)];
+}
+
+.glow-track {
+  @apply shadow-[0_0_2px_#8BE8E5,0_0_14px_rgba(139,232,229,0.35)];
+}
