@@ -35,7 +35,7 @@ const MainCnt = () => {
         if (data.error.includes("expired")) {
           alert("Your Spotify session expired. Please log in again.");
           localStorage.removeItem("ms_user");
-          window.location.href = "/";
+          window.location.href = "/home";
           return;
         } else {
           alert("Something went wrong. Try again.");
@@ -104,5 +104,5 @@ const MainCnt = () => {
     </div>
   );
 };
-
+ 
 export default MainCnt;

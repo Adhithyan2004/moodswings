@@ -101,7 +101,7 @@ def refresh_spotify_token(user_id: str):
 
     refresh_token = token_data.get("refresh_token")
     if not refresh_token:
-        print(f"⚠️ No refresh token available for user {user_id}")
+        print(f" No refresh token available for user {user_id}")
         return None
 
     response = requests.post(

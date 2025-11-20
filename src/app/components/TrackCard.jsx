@@ -20,7 +20,7 @@ const TrackCard = ({ track }) => {
     // Stop previous audio if exists
     if (audioRef.current) {
       audioRef.current.pause();
-    }
+    } 
 
     const audio = new Audio(track.preview_url);
     audioRef.current = audio;
